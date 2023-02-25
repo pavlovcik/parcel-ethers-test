@@ -1,13 +1,21 @@
 {
+  "type": "module",
+  "main": "dist/test.js",
+  "module": "dist/test.mjs",
+  "typings": "dist/test.d.ts",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "rollup -c"
   },
   "dependencies": {
     "ethers": "^6.0.8",
-    "parcel": "^2.8.3"
+    "parcel": "^2.8.3",
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
-    "@metamask/providers": "^10.2.1"
+    "@metamask/providers": "^10.2.1",
+    "esbuild": "^0.17.10",
+    "rollup": "^3.17.2",
+    "rollup-plugin-dts": "^5.2.0",
+    "rollup-plugin-esbuild": "^5.0.0"
   }
 }
